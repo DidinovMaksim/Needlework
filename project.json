@@ -1,0 +1,101 @@
+{
+  "webroot":  "wwwroot",
+  "userSecretsId": "aspnet5-NeedleWork2016-0fbd73e6-44ee-485b-b74c-ad2acd70c692",
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "Aspose": "1.0.0",
+    "EntityFramework.Commands": "7.0.0-rc1-final",
+    "EntityFramework.InMemory": "7.0.0-rc1-final",
+    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+    "EntityFramework.MicrosoftSqlServer.Design": "7.0.0-rc1-final",
+    "Grid.Mvc.Ajax": "1.0.31",
+    "HtmlRenderer.PdfSharp": "1.5.0.6",
+    "HtmlToPdf": "1.0.4",
+    "iTextSharp": "5.5.8",
+    "JqGrid": "1.4.3",
+    "jQuery": "2.2.0",
+    "jQuery.jqGrid": "4.4.4",
+    "log4net": "2.0.5",
+    "log4net-callerinfo": "1.0.2.2",
+    "Microsoft.ApplicationInsights.AspNet": "1.0.0-rc1",
+    "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+    "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+    "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+    "Microsoft.Dnx.Loader": "1.0.0-rc1-final",
+    "Microsoft.Dnx.Runtime": "1.0.0-rc1-final",
+    "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging.TraceSource": "1.0.0-rc1-final",
+    "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
+    "MvcJqGrid": "1.0.15",
+    "NLib": "2.1.1.23405",
+    "NLog": "4.2.3",
+    "NLog.Config": "4.2.3",
+    "NReco": "2.0.3",
+    "NReco.PdfGenerator": "1.1.11",
+    "RazorPDF2": "2.0.0",
+    "Rotativa": "1.6.4",
+    "Select.Pdf.x64": "16.1.1",
+    "Serilog": "1.5.14",
+    "Serilog.Sinks.NLog": "1.5.4",
+  },
+
+  "commands": {
+    "ef": "EntityFramework.Commands",
+    "web": "Microsoft.AspNet.Server.Kestrel"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {      },
+      "frameworkAssemblies": {
+        "System.Net": "4.0.0.0",
+        "System.Web": "4.0.0.0",
+        "System.Web.Abstractions": "4.0.0.0",
+        "System.Web.ApplicationServices": "4.0.0.0",
+        "System.Web.DataVisualization": "4.0.0.0",
+        "System.Web.DataVisualization.Design": "4.0.0.0",
+        "System.Web.DynamicData": "4.0.0.0",
+        "System.Web.DynamicData.Design": "4.0.0.0",
+        "System.Web.Entity": "4.0.0.0",
+        "System.Web.Entity.Design": "4.0.0.0",
+        "System.Web.Extensions": "4.0.0.0",
+        "System.Web.Extensions.Design": "4.0.0.0",
+        "System.Web.Mobile": "4.0.0.0",
+        "System.Web.RegularExpressions": "4.0.0.0",
+        "System.Web.Services": "4.0.0.0",
+        "System.Web.Routing": "4.0.0.0",
+        "System.Drawing": "4.0.0.0",
+
+      }
+    }
+  },
+
+  "exclude": [
+    "wwwroot",
+    "node_modules"
+  ],
+  "publishExclude": [
+    "**.user",
+    "**.vspscc"
+  ],
+  "scripts": {
+    "prepublish": [ "npm install", "bower install", "gulp clean", "gulp min" ]
+  }
+}

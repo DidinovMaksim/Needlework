@@ -1,0 +1,1875 @@
+Microsoft.Extensions.DependencyInjection.DataProtectionServices Information: 0 : User profile is available. Using 'C:\Users\User1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 DEBUG http://localhost:50660/ text/html 
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.HomeController.Index with arguments () - ModelState is Valid'
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (7ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.HomeController.Index with arguments () - ModelState is Valid'
+Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor Information: 1 : Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor Information: 1 : Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler Information: 2 : Executed action NeedleWork2016.Controllers.HomeController.Index in 0.2406ms
+Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler Information: 2 : Executed action NeedleWork2016.Controllers.HomeController.Index in 0.114ms
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.2922ms 200 text/html; charset=utf-8
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.2922ms 200 text/html; charset=utf-8
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/css/style.css  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/Localization.en.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/index.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /css/style.css was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/Localization.en.js was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/index.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0062ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0062ms 304 text/css
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/Palettes  
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (7ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (5ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (8ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.PalettesController.Index with arguments () - ModelState is Valid'
+Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor Information: 1 : Executing ViewResult, running view at path /Views/Palettes/Index.cshtml.
+Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler Information: 2 : Executed action NeedleWork2016.Controllers.PalettesController.Index in 0.014ms
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0265ms 200 text/html; charset=utf-8
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/Palettes/GetPalettes  
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (7ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.PalettesController.GetPalettes with arguments () - ModelState is Valid'
+Microsoft.AspNet.Mvc.JsonResult Information: 1 : Executing JsonResult, writing value NeedleWork2016.ViewModels.Palettes.PaletteListViewModel.
+Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware Error: 0 : An unhandled exception has occurred while executing the request
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.ArgumentException: The given expression 'new PaletteViewModel([p])' does not contain the searched expression '[p]' in a nested NewExpression with member assignments or a MemberBindingExpression.
+Имя параметра: fullExpression
+   в Remotion.Linq.Clauses.ExpressionVisitors.AccessorFindingExpressionVisitor.FindAccessorLambda(Expression searchedExpression, Expression fullExpression, ParameterExpression inputParameter)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.<>c__DisplayClass49_0`1.<GetEntityAccessors>b__0(EntityTrackingInfo entityTrackingInfo)
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.GetEntityAccessors[TResult](IEnumerable`1 entityTrackingInfos, Expression selector)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.TrackEntitiesInResults[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.CreateQueryExecutor[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Storage.Database.CompileQuery[TResult](QueryModel queryModel)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.<>c__DisplayClass18_0`1.<CompileQuery>b__0()
+   в Microsoft.Data.Entity.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   в Remotion.Linq.QueryableBase`1.System.Collections.IEnumerable.GetEnumerator()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   в Microsoft.AspNet.Mvc.JsonResult.ExecuteResultAsync(ActionContext context)
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultAsync>d__56.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultFilterAsync>d__55.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllResultFiltersAsync>d__54.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResourceFilterAsync>d__49.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.MigrationsEndPointMiddleware.<Invoke>d__5.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware Warning: 0 : The response has already started, the error page middleware will not be executed.
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 3 : Request finished in 0.0391ms 500
+Microsoft.AspNet.Server.Kestrel Error: 13 : An unhandled exception was thrown by the application.
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.ArgumentException: The given expression 'new PaletteViewModel([p])' does not contain the searched expression '[p]' in a nested NewExpression with member assignments or a MemberBindingExpression.
+Имя параметра: fullExpression
+   в Remotion.Linq.Clauses.ExpressionVisitors.AccessorFindingExpressionVisitor.FindAccessorLambda(Expression searchedExpression, Expression fullExpression, ParameterExpression inputParameter)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.<>c__DisplayClass49_0`1.<GetEntityAccessors>b__0(EntityTrackingInfo entityTrackingInfo)
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.GetEntityAccessors[TResult](IEnumerable`1 entityTrackingInfos, Expression selector)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.TrackEntitiesInResults[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.CreateQueryExecutor[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Storage.Database.CompileQuery[TResult](QueryModel queryModel)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.<>c__DisplayClass18_0`1.<CompileQuery>b__0()
+   в Microsoft.Data.Entity.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   в Remotion.Linq.QueryableBase`1.System.Collections.IEnumerable.GetEnumerator()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   в Microsoft.AspNet.Mvc.JsonResult.ExecuteResultAsync(ActionContext context)
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultAsync>d__56.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultFilterAsync>d__55.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllResultFiltersAsync>d__54.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResourceFilterAsync>d__49.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.MigrationsEndPointMiddleware.<Invoke>d__5.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Hosting.Internal.HostingEngine.<>c__DisplayClass32_0.<<Start>b__0>d.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   в Microsoft.AspNet.Server.Kestrel.Http.Frame.<RequestProcessingAsync>d__79.MoveNext()
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 POST http://localhost:50660/Palettes/CreatePalette application/x-www-form-urlencoded; charset=UTF-8 15
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (4ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.PalettesController.CreatePalette with arguments (NeedleWork2016.Models.Palette) - ModelState is Valid'
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT OFF;
+INSERT INTO [Palette] ([Id], [IdUser], [Name])
+VALUES (@p0, @p1, @p2);
+SELECT @@ROWCOUNT;
+Microsoft.Data.Entity.DbContext Error: 1 : An exception occurred in the database while saving changes.
+Microsoft.Data.Entity.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'NameIdUser_Unique'. Cannot insert duplicate key in object 'dbo.Palette'. The duplicate key value is (newpalette, 618d34d4-d05f-4846-bb48-f3df6dfdb35c).
+The statement has been terminated.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   в System.Data.Common.DbCommand.ExecuteReader()
+   в Microsoft.Data.Entity.Storage.Internal.RelationalCommand.<>c__DisplayClass17_0.<ExecuteReader>b__0(DbCommand cmd, IRelationalConnection con)
+   в Microsoft.Data.Entity.Storage.Internal.RelationalCommand.Execute[T](IRelationalConnection connection, Func`3 action, String executeMethod, Boolean openConnection, Boolean closeConnection)
+   в Microsoft.Data.Entity.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, Boolean manageConnection)
+   в Microsoft.Data.Entity.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- Конец трассировки внутреннего стека исключений ---
+   в Microsoft.Data.Entity.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   в Microsoft.Data.Entity.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   в Microsoft.Data.Entity.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   в Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   в Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   в Microsoft.Data.Entity.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.AspNet.Mvc.JsonResult Information: 1 : Executing JsonResult, writing value NeedleWork2016.ViewModels.Palettes.PaletteViewModel.
+Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler Information: 2 : Executed action NeedleWork2016.Controllers.PalettesController.CreatePalette in 0.0391ms
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0438ms 200 application/json; charset=utf-8
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/Palettes  
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.PalettesController.Index with arguments () - ModelState is Valid'
+Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor Information: 1 : Executing ViewResult, running view at path /Views/Palettes/Index.cshtml.
+Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler Information: 2 : Executed action NeedleWork2016.Controllers.PalettesController.Index in 0ms
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0062ms 200 text/html; charset=utf-8
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/css/style.css  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/colorPicker.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/css/editPage.css  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/Web-Design-Ledger-200px-tall.png  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/editPage.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/Localization.en.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/stopFailColor.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /css/editPage.css was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/colorPicker.js was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/editPage.js was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /css/style.css was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/Web-Design-Ledger-200px-tall.png was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 text/css
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/Localization.en.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0063ms 304 application/javascript
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/stopFailColor.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0031ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/index.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 image/png
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0062ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0125ms 304 text/css
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/index.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0031ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0046ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/Web-Design-Ledger-200px-tall.png  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/menu2.png  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/Mail-icon.png  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/menu2.png was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/Mail-icon.png was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 image/png
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 2 : Sending file. Request path: '/img/Web-Design-Ledger-200px-tall.png'. Physical path: 'C:\Users\User1\Documents\Project\trunk\NeedleWork2016\src\NeedleWork2016\wwwroot\img\Web-Design-Ledger-200px-tall.png'
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0063ms 304 image/png
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/goDown.png  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/loading.gif  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/Palettes/GetPalettes  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/imagePalette.png  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0172ms 200 image/png
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/loading.gif was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/goDown.png was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0031ms 304 image/gif
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (8ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0078ms 304 image/png
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/imagePalette.png was not modified
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0093ms 304 image/png
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.PalettesController.GetPalettes with arguments () - ModelState is Valid'
+Microsoft.AspNet.Mvc.JsonResult Information: 1 : Executing JsonResult, writing value NeedleWork2016.ViewModels.Palettes.PaletteListViewModel.
+Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware Error: 0 : An unhandled exception has occurred while executing the request
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.ArgumentException: The given expression 'new PaletteViewModel([p])' does not contain the searched expression '[p]' in a nested NewExpression with member assignments or a MemberBindingExpression.
+Имя параметра: fullExpression
+   в Remotion.Linq.Clauses.ExpressionVisitors.AccessorFindingExpressionVisitor.FindAccessorLambda(Expression searchedExpression, Expression fullExpression, ParameterExpression inputParameter)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.<>c__DisplayClass49_0`1.<GetEntityAccessors>b__0(EntityTrackingInfo entityTrackingInfo)
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.GetEntityAccessors[TResult](IEnumerable`1 entityTrackingInfos, Expression selector)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.TrackEntitiesInResults[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.CreateQueryExecutor[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Storage.Database.CompileQuery[TResult](QueryModel queryModel)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.<>c__DisplayClass18_0`1.<CompileQuery>b__0()
+   в Microsoft.Data.Entity.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   в Remotion.Linq.QueryableBase`1.System.Collections.IEnumerable.GetEnumerator()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   в Microsoft.AspNet.Mvc.JsonResult.ExecuteResultAsync(ActionContext context)
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultAsync>d__56.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultFilterAsync>d__55.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllResultFiltersAsync>d__54.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResourceFilterAsync>d__49.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.MigrationsEndPointMiddleware.<Invoke>d__5.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware Warning: 0 : The response has already started, the error page middleware will not be executed.
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 3 : Request finished in 0.0203ms 500
+Microsoft.AspNet.Server.Kestrel Error: 13 : An unhandled exception was thrown by the application.
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.ArgumentException: The given expression 'new PaletteViewModel([p])' does not contain the searched expression '[p]' in a nested NewExpression with member assignments or a MemberBindingExpression.
+Имя параметра: fullExpression
+   в Remotion.Linq.Clauses.ExpressionVisitors.AccessorFindingExpressionVisitor.FindAccessorLambda(Expression searchedExpression, Expression fullExpression, ParameterExpression inputParameter)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.<>c__DisplayClass49_0`1.<GetEntityAccessors>b__0(EntityTrackingInfo entityTrackingInfo)
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.GetEntityAccessors[TResult](IEnumerable`1 entityTrackingInfos, Expression selector)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.TrackEntitiesInResults[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.CreateQueryExecutor[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Storage.Database.CompileQuery[TResult](QueryModel queryModel)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.<>c__DisplayClass18_0`1.<CompileQuery>b__0()
+   в Microsoft.Data.Entity.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   в Remotion.Linq.QueryableBase`1.System.Collections.IEnumerable.GetEnumerator()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   в Microsoft.AspNet.Mvc.JsonResult.ExecuteResultAsync(ActionContext context)
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultAsync>d__56.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultFilterAsync>d__55.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllResultFiltersAsync>d__54.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResourceFilterAsync>d__49.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.MigrationsEndPointMiddleware.<Invoke>d__5.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Hosting.Internal.HostingEngine.<>c__DisplayClass32_0.<<Start>b__0>d.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   в Microsoft.AspNet.Server.Kestrel.Http.Frame.<RequestProcessingAsync>d__79.MoveNext()
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/favicon.ico  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 2 : Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\User1\Documents\Project\trunk\NeedleWork2016\src\NeedleWork2016\wwwroot\favicon.ico'
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0ms 200 image/x-icon
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/Palettes  
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (4ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.PalettesController.Index with arguments () - ModelState is Valid'
+Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor Information: 1 : Executing ViewResult, running view at path /Views/Palettes/Index.cshtml.
+Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler Information: 2 : Executed action NeedleWork2016.Controllers.PalettesController.Index in 0ms
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0063ms 200 text/html; charset=utf-8
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/css/style.css  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/Localization.en.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /css/style.css was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/css/editPage.css  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0031ms 304 text/css
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/Localization.en.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 application/javascript
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /css/editPage.css was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/colorPicker.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/index.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/colorPicker.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0063ms 304 text/css
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0016ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/editPage.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/index.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/stopFailColor.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/editPage.js was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/stopFailColor.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0156ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0015ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0109ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/menu2.png  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/Web-Design-Ledger-200px-tall.png  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/menu2.png was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/Mail-icon.png  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0031ms 304 image/png
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/Web-Design-Ledger-200px-tall.png was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/Mail-icon.png was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/goDown.png  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0109ms 304 image/png
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0094ms 304 image/png
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/goDown.png was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/loading.gif  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0063ms 304 image/png
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/img/imagePalette.png  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/Palettes/GetPalettes  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/loading.gif was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /img/imagePalette.png was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0079ms 304 image/png
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0093ms 304 image/gif
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.PalettesController.GetPalettes with arguments () - ModelState is Valid'
+Microsoft.AspNet.Mvc.JsonResult Information: 1 : Executing JsonResult, writing value NeedleWork2016.ViewModels.Palettes.PaletteListViewModel.
+Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware Error: 0 : An unhandled exception has occurred while executing the request
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.ArgumentException: The given expression 'new PaletteViewModel([p])' does not contain the searched expression '[p]' in a nested NewExpression with member assignments or a MemberBindingExpression.
+Имя параметра: fullExpression
+   в Remotion.Linq.Clauses.ExpressionVisitors.AccessorFindingExpressionVisitor.FindAccessorLambda(Expression searchedExpression, Expression fullExpression, ParameterExpression inputParameter)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.<>c__DisplayClass49_0`1.<GetEntityAccessors>b__0(EntityTrackingInfo entityTrackingInfo)
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.GetEntityAccessors[TResult](IEnumerable`1 entityTrackingInfos, Expression selector)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.TrackEntitiesInResults[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.CreateQueryExecutor[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Storage.Database.CompileQuery[TResult](QueryModel queryModel)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.<>c__DisplayClass18_0`1.<CompileQuery>b__0()
+   в Microsoft.Data.Entity.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   в Remotion.Linq.QueryableBase`1.System.Collections.IEnumerable.GetEnumerator()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   в Microsoft.AspNet.Mvc.JsonResult.ExecuteResultAsync(ActionContext context)
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultAsync>d__56.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultFilterAsync>d__55.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllResultFiltersAsync>d__54.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResourceFilterAsync>d__49.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.MigrationsEndPointMiddleware.<Invoke>d__5.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware Warning: 0 : The response has already started, the error page middleware will not be executed.
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 3 : Request finished in 0.0188ms 500
+Microsoft.AspNet.Server.Kestrel Error: 13 : An unhandled exception was thrown by the application.
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.ArgumentException: The given expression 'new PaletteViewModel([p])' does not contain the searched expression '[p]' in a nested NewExpression with member assignments or a MemberBindingExpression.
+Имя параметра: fullExpression
+   в Remotion.Linq.Clauses.ExpressionVisitors.AccessorFindingExpressionVisitor.FindAccessorLambda(Expression searchedExpression, Expression fullExpression, ParameterExpression inputParameter)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.<>c__DisplayClass49_0`1.<GetEntityAccessors>b__0(EntityTrackingInfo entityTrackingInfo)
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.GetEntityAccessors[TResult](IEnumerable`1 entityTrackingInfos, Expression selector)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.TrackEntitiesInResults[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.CreateQueryExecutor[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Storage.Database.CompileQuery[TResult](QueryModel queryModel)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.<>c__DisplayClass18_0`1.<CompileQuery>b__0()
+   в Microsoft.Data.Entity.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   в Remotion.Linq.QueryableBase`1.System.Collections.IEnumerable.GetEnumerator()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   в Microsoft.AspNet.Mvc.JsonResult.ExecuteResultAsync(ActionContext context)
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultAsync>d__56.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultFilterAsync>d__55.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllResultFiltersAsync>d__54.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResourceFilterAsync>d__49.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.MigrationsEndPointMiddleware.<Invoke>d__5.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Hosting.Internal.HostingEngine.<>c__DisplayClass32_0.<<Start>b__0>d.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   в Microsoft.AspNet.Server.Kestrel.Http.Frame.<RequestProcessingAsync>d__79.MoveNext()
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/favicon.ico  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 2 : Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\User1\Documents\Project\trunk\NeedleWork2016\src\NeedleWork2016\wwwroot\favicon.ico'
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0016ms 200 image/x-icon
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 POST http://localhost:50660/Palettes/CreatePalette application/x-www-form-urlencoded; charset=UTF-8 16
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (5ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.PalettesController.CreatePalette with arguments (NeedleWork2016.Models.Palette) - ModelState is Valid'
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT OFF;
+INSERT INTO [Palette] ([Id], [IdUser], [Name])
+VALUES (@p0, @p1, @p2);
+SELECT @@ROWCOUNT;
+Microsoft.AspNet.Mvc.JsonResult Information: 1 : Executing JsonResult, writing value NeedleWork2016.ViewModels.Palettes.PaletteViewModel.
+Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler Information: 2 : Executed action NeedleWork2016.Controllers.PalettesController.CreatePalette in 5.0796ms
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 5.0859ms 200 application/json; charset=utf-8
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/Palettes/GetColors?idpalette=049e9fb7-0975-45a2-152f-08d336de61b7  
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (8ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.PalettesController.GetColors with arguments (00000000-0000-0000-0000-000000000000) - ModelState is Valid'
+Microsoft.AspNet.Mvc.JsonResult Information: 1 : Executing JsonResult, writing value NeedleWork2016.ViewModels.Palettes.ColorListViewModel.
+Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware Error: 0 : An unhandled exception has occurred while executing the request
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.ArgumentException: The given expression 'new ColorViewModel([c])' does not contain the searched expression '[c]' in a nested NewExpression with member assignments or a MemberBindingExpression.
+Имя параметра: fullExpression
+   в Remotion.Linq.Clauses.ExpressionVisitors.AccessorFindingExpressionVisitor.FindAccessorLambda(Expression searchedExpression, Expression fullExpression, ParameterExpression inputParameter)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.<>c__DisplayClass49_0`1.<GetEntityAccessors>b__0(EntityTrackingInfo entityTrackingInfo)
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.GetEntityAccessors[TResult](IEnumerable`1 entityTrackingInfos, Expression selector)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.TrackEntitiesInResults[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.CreateQueryExecutor[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Storage.Database.CompileQuery[TResult](QueryModel queryModel)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.<>c__DisplayClass18_0`1.<CompileQuery>b__0()
+   в Microsoft.Data.Entity.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   в Remotion.Linq.QueryableBase`1.System.Collections.IEnumerable.GetEnumerator()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   в Microsoft.AspNet.Mvc.JsonResult.ExecuteResultAsync(ActionContext context)
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultAsync>d__56.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultFilterAsync>d__55.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllResultFiltersAsync>d__54.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResourceFilterAsync>d__49.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.MigrationsEndPointMiddleware.<Invoke>d__5.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware Warning: 0 : The response has already started, the error page middleware will not be executed.
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 3 : Request finished in 0.5078ms 500
+Microsoft.AspNet.Server.Kestrel Error: 13 : An unhandled exception was thrown by the application.
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.ArgumentException: The given expression 'new ColorViewModel([c])' does not contain the searched expression '[c]' in a nested NewExpression with member assignments or a MemberBindingExpression.
+Имя параметра: fullExpression
+   в Remotion.Linq.Clauses.ExpressionVisitors.AccessorFindingExpressionVisitor.FindAccessorLambda(Expression searchedExpression, Expression fullExpression, ParameterExpression inputParameter)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.<>c__DisplayClass49_0`1.<GetEntityAccessors>b__0(EntityTrackingInfo entityTrackingInfo)
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.GetEntityAccessors[TResult](IEnumerable`1 entityTrackingInfos, Expression selector)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.TrackEntitiesInResults[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.CreateQueryExecutor[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Storage.Database.CompileQuery[TResult](QueryModel queryModel)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.<>c__DisplayClass18_0`1.<CompileQuery>b__0()
+   в Microsoft.Data.Entity.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   в Remotion.Linq.QueryableBase`1.System.Collections.IEnumerable.GetEnumerator()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   в Microsoft.AspNet.Mvc.JsonResult.ExecuteResultAsync(ActionContext context)
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultAsync>d__56.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultFilterAsync>d__55.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllResultFiltersAsync>d__54.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResourceFilterAsync>d__49.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.MigrationsEndPointMiddleware.<Invoke>d__5.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Hosting.Internal.HostingEngine.<>c__DisplayClass32_0.<<Start>b__0>d.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   в Microsoft.AspNet.Server.Kestrel.Http.Frame.<RequestProcessingAsync>d__79.MoveNext()
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/Palettes/GetColors?idpalette=049e9fb7-0975-45a2-152f-08d336de61b7  
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.PalettesController.GetColors with arguments (00000000-0000-0000-0000-000000000000) - ModelState is Valid'
+Microsoft.AspNet.Mvc.JsonResult Information: 1 : Executing JsonResult, writing value NeedleWork2016.ViewModels.Palettes.ColorListViewModel.
+Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware Error: 0 : An unhandled exception has occurred while executing the request
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.ArgumentException: The given expression 'new ColorViewModel([c])' does not contain the searched expression '[c]' in a nested NewExpression with member assignments or a MemberBindingExpression.
+Имя параметра: fullExpression
+   в Remotion.Linq.Clauses.ExpressionVisitors.AccessorFindingExpressionVisitor.FindAccessorLambda(Expression searchedExpression, Expression fullExpression, ParameterExpression inputParameter)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.<>c__DisplayClass49_0`1.<GetEntityAccessors>b__0(EntityTrackingInfo entityTrackingInfo)
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.GetEntityAccessors[TResult](IEnumerable`1 entityTrackingInfos, Expression selector)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.TrackEntitiesInResults[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.CreateQueryExecutor[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Storage.Database.CompileQuery[TResult](QueryModel queryModel)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.<>c__DisplayClass18_0`1.<CompileQuery>b__0()
+   в Microsoft.Data.Entity.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   в Remotion.Linq.QueryableBase`1.System.Collections.IEnumerable.GetEnumerator()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   в Microsoft.AspNet.Mvc.JsonResult.ExecuteResultAsync(ActionContext context)
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultAsync>d__56.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultFilterAsync>d__55.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllResultFiltersAsync>d__54.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResourceFilterAsync>d__49.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.MigrationsEndPointMiddleware.<Invoke>d__5.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware Warning: 0 : The response has already started, the error page middleware will not be executed.
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 3 : Request finished in 0.0094ms 500
+Microsoft.AspNet.Server.Kestrel Error: 13 : An unhandled exception was thrown by the application.
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.ArgumentException: The given expression 'new ColorViewModel([c])' does not contain the searched expression '[c]' in a nested NewExpression with member assignments or a MemberBindingExpression.
+Имя параметра: fullExpression
+   в Remotion.Linq.Clauses.ExpressionVisitors.AccessorFindingExpressionVisitor.FindAccessorLambda(Expression searchedExpression, Expression fullExpression, ParameterExpression inputParameter)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.<>c__DisplayClass49_0`1.<GetEntityAccessors>b__0(EntityTrackingInfo entityTrackingInfo)
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.GetEntityAccessors[TResult](IEnumerable`1 entityTrackingInfos, Expression selector)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.TrackEntitiesInResults[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Query.EntityQueryModelVisitor.CreateQueryExecutor[TResult](QueryModel queryModel)
+   в Microsoft.Data.Entity.Storage.Database.CompileQuery[TResult](QueryModel queryModel)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.<>c__DisplayClass18_0`1.<CompileQuery>b__0()
+   в Microsoft.Data.Entity.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   в Microsoft.Data.Entity.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   в Remotion.Linq.QueryableBase`1.System.Collections.IEnumerable.GetEnumerator()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   в Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   в Microsoft.AspNet.Mvc.JsonResult.ExecuteResultAsync(ActionContext context)
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultAsync>d__56.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultFilterAsync>d__55.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllResultFiltersAsync>d__54.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResourceFilterAsync>d__49.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.MigrationsEndPointMiddleware.<Invoke>d__5.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.Entity.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.ApplicationInsights.AspNet.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в Microsoft.AspNet.Hosting.Internal.HostingEngine.<>c__DisplayClass32_0.<<Start>b__0>d.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   в Microsoft.AspNet.Server.Kestrel.Http.Frame.<RequestProcessingAsync>d__79.MoveNext()
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/Palettes/GetColors?idpalette=049e9fb7-0975-45a2-152f-08d336de61b7  
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (17ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (6ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.PalettesController.GetColors with arguments (00000000-0000-0000-0000-000000000000) - ModelState is Valid'

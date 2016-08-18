@@ -1,0 +1,443 @@
+﻿
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="~/css/homePage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+    <link href="~/lib/LiterallyCanvas/css/literallycanvas.css" rel="stylesheet">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react-with-addons.js"></script>
+
+    <script src="~/lib/LiterallyCanvas/js/literallycanvas.js"></script>
+
+
+    <link href="~/lib/fengyuanchen-cropper/dist/cropper.css" rel="stylesheet">
+    <script src="~/lib/fengyuanchen-cropper/dist/cropper.min.js"></script>
+
+    <script type="text/javascript" src="~/js/testPalletes.js"></script>
+    <script src="~/lib/glfx.js"></script>
+
+    <script defer src="~/js/jQuery.download.js"></script>
+
+    <script defer src="~/js/needlework.homepage.js"></script>
+    <script defer src="~/js/needlework.homepage.globals.js"></script>
+    <script defer src="~/js/needlework.homepage.algorithm.js"></script>
+    <script defer src="~/js/needlework.homepage.drawing.js"></script>
+    <script defer src="~/js/needlework.homepage.events.js"></script>
+    <script defer src="~/js/needlework.homepage.utils.js"></script>
+    <script defer src="~/js/needlework.homepage.palletes.js"></script>
+
+
+    <script src="~/lib/jsPDF/jspdf.js"></script>
+    <script src="~/lib/jsPDF/dist/jspdf.debug.js"></script>
+    <script src="~/lib/jsPDF/libs/png_support/png.js"></script>
+    <script src="~/lib/jsPDF/libs/png_support/zlib.js"></script>
+    <script src="~/lib/jsPDF/libs/html2canvas/dist/html2canvas.js"></script>
+    <script src="~/js/createPDF.js"></script>
+
+
+@using System.Security.Claims
+
+
+    <div id="top">
+
+        <div id="companyName">Fancywork</div>
+
+        <ul>
+            <div id="resizeMenu">
+                 <li id="homePageTop"></li>
+                <a asp-controller="Home" asp-action="About"><li id="aboutUsTop"></li></a>
+               @if (User.IsSignedIn())
+               {
+
+                <a asp-controller="Palettes" asp-action="Index"><li id="editPalettesTop"></li></a>
+                   if (User.IsInRole("Admin"))
+                   {
+                    <a asp-controller="AdminUser" asp-action="Index"><li id="adminPageTop"></li></a>
+                   }
+
+                <li id="signOutTop" class="signOut"></li>
+                
+               }
+               else
+               {
+                <li id="signInTop" class="signIn"></li>
+               }
+                </div>
+</ul>
+
+    </div>
+
+    <div class="homePage">
+        <div class="uploaderSection">
+
+            <div id="dndHolder">
+                <p id="dragBoxText"><f id="dragBoxText1"></f><span id="imageSpan"></span><f id="dragBoxText2"></f></p>
+            </div>
+            <p id="status"></p>
+            <div id="uplByUrl">
+                <label for="imgUrl"><div id="imageURL"></div></label>               
+                <div id="urlBlocksPosition">
+                    <input type="text" id="imgUrl" placeholder="Enter image url">
+                    <button id="uplImgByUrl" onclick="needlework.homepage.drawing.fillCanvasWImgFromUrl()"></button>
+                </div>
+                <!--                <button type = "button" id = "uplBtn" onclick="fillCanvasWImgFromUrl()" placeholder = "Image url">Upload</button>-->
+                <!--
+                <input type = "file" id = "fileImg">
+                <button type = "button" id = "uplBtn" onclick="fillCanvasWImgFromFile()">Upload from file</button>
+                -->
+
+                <div class="fileImg">
+                    <span id="chooseSpan"></span>
+                    <input type="file" id="fileImg" title="">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="responsiveContent">
+
+            <div class="uploadedSection">
+
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#patCreation" id="patternCreation"></a></li>
+                        <li><a href="#imgAdjustment" id="imageAdjustment"></a></li>
+                        <li><a href="#imgDraw" id="imageDraw"></a></li>
+                        <li><a href="#imgCropTab" id="imageCropTab"></a></li>
+
+                    </ul>
+                    <div id="patCreation">
+                        <div id="imgCanvases">
+                            <div class="leftPatternCreation">
+                                <div id="srcImgCanvasDiv">
+                                    <canvas id="srcImgCanvas"></canvas>
+                                </div>
+
+
+
+
+                                <div id="patSetTableDiv">
+                                    <table>
+                                        <tr>
+                                            <td><label id="numberStitches"></label></td>
+                                            <td><label id="countColors"></label></td>
+                                            <td><label id="paletteSkin"></label></td>
+                                            <td><label id="selectedPalette"></label></td>
+                                            <td><label id="selectedAlg"></label></td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><input type="text" id="stitchesCount" placeholder="Enter number of stitches" onkeypress="return needlework.homepage.utils.isNumberKey(event)"></td>
+                                            <td><input type="text" id="colorsCount" placeholder="Enter number of colors" onkeypress="return needlework.homepage.utils.isNumberKey(event)"></td>
+                                            <td><input type="number" id="patScale" value='10' min="2" onkeypress="return needlework.homepage.utils.isNumberKey(event)"></td>
+                                            <td>
+                                                <select id="palletteSel">
+                                                    <option value="1" id="firstPalette"></option>
+                                                    <option value="2" id="secondPalette"></option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select id="patAlgo">
+                                                    <option value="Average" id="avgColors"></option>
+                                                    <option value="Contrast" id="contrastColor"></option>
+                                                </select>
+                                            </td>
+
+                                        </tr>
+
+
+
+
+                                        <!--
+                                        <tr>
+                                        <td><label>Enter number of stitches: </label></td>
+                                        <td><input type = "text" id = "stitchesCount" placeholder = "Enter number of stitches"></td>
+                                        </tr>
+                                        <tr>
+                                        <td><label>Select palette: </label></td>
+                                        <td>
+                                        <select id = "palletteSel">
+                                        <option value="1">First palette</option>
+                                        <option value="2">Second palette</option>
+                                        </select>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td><label>Select algorithm: </label></td>
+                                        <td>
+                                        <select id = "patAlgo">
+                                        <option value="Average">Average colors</option>
+                                        <option value="Contrast">Contast colors</option>
+                                        </select>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td><label>Enter colors count: </label></td>
+                                        <td><input type = "text" id = "colorsCount" placeholder = "Enter number of colors"></td>
+                                        </tr>
+                                        <tr>
+                                        <td><label>Enter pattern scale: </label></td>
+                                        <td><input type = "number" id = "patScale" value='10' min= "2"></td>
+                                        </tr>
+                                        -->
+                                    </table>
+                                </div>
+
+
+                                <div id="crtPatBtnDiv">
+                                    <button id="crtPattern" onclick="needlework.homepage.createPattern()"></button>
+                                    <button id="fullResetBtn" onclick="needlework.homepage.utils.fullImgReset()"></button>
+                                </div>
+                            </div>
+                            <div class="leftPatternCreation" id="rightPatternCreation">
+                                <div id="patternImgCanvasDiv">
+                                    <canvas id="patternImgCanvas"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="patternSettings">
+                            <!--
+                            <div id = "patSetTableDiv">
+                            <table>
+                            <tr>
+                            <td><label>Enter number of stitches: </label></td>
+                            <td><input type = "text" id = "stitchesCount" placeholder = "Enter number of stitches"></td>
+                            </tr>
+                            <tr>
+                            <td><label>Select palette: </label></td>
+                            <td>
+                            <select id = "palletteSel">
+                            <option value="1">First palette</option>
+                            <option value="2">Second palette</option>
+                            </select>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td><label>Select algorithm: </label></td>
+                            <td>
+                            <select id = "patAlgo">
+                            <option value="Average">Average colors</option>
+                            <option value="Contrast">Contast colors</option>
+                            </select>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td><label>Enter colors count: </label></td>
+                            <td><input type = "text" id = "colorsCount" placeholder = "Enter number of colors"></td>
+                            </tr>
+                            <tr>
+                            <td><label>Enter pattern scale: </label></td>
+                            <td><input type = "number" id = "patScale" value='10' min= "2"></td>
+                            </tr>
+                            </table>
+                            </div>
+                            -->
+                            <!--
+
+                            <div id = "crtPatBtnDiv">
+                            <button id = "crtPattern" onclick = "createPattern()">Create pattern</button>
+                            <button id = "fullResetBtn" onclick = "fullImgReset()">Full reset</button>
+                            </div>
+                            -->
+                        </div>
+
+
+                        <div id="patternCreated">
+                            <div id="patCrtTableDiv">
+                                <table>
+                                    <tr id="userColors"></tr>
+                                    <br>
+                                    <tr>
+                                        <div id="colReportCanvas" style="overflow-y: scroll;  height:200px">
+                                            <canvas id="colorsReport"></canvas>
+                                        </div>
+                                    </tr>
+                                    <tr> <label style="font-size:.8em" id="countUsersColors"></tr>
+                                    <tr><input type="text" id="colorsCountRep" readonly placeholder="Colors count will be shown here"></tr>
+                                </table>
+                            </div>
+
+
+                            <div id="patCrtSaveBtnDiv">
+
+                                @{
+                                    if (User.Identity.IsAuthenticated)
+                                    {
+                                        {<button  id="savePatternFromServer" onclick="needlework.homepage.savePatternFromServer()"></button>}
+                                    }
+                                    else
+                                    {<button class="savePattern" id="savePDFPattern"></button>  }
+                                }
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="imgAdjustment">
+
+                        <div id="editorSettings">
+                            <div id="editorSettingsDiv">
+                                <div id="tableAndReset">
+                                    <table id="editorSettingsTable">
+                                        <tr>
+                                            <td><label id="brightnessTitle"></label></td>
+                                            <td>
+                                                <input type="range" id='brightnessVal' min='-1' max='1' step='0.01' value='0'>
+                                            <td>
+                                                <label id="brightnessShowVal">0</label>
+                                            </td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label id="contrasts"></label></td>
+                                            <td>
+                                                <input type="range" id='contrastVal' min='-1' max='1' step='0.01' value='0'>
+                                            <td>
+                                                <label id="contrastShowVal">0</label>
+                                            </td>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><label id="hue"></label></td>
+                                            <td>
+                                                <input type="range" id='hueVal' min='-1' max='1' step='0.01' value='0'>
+                                            <td>
+                                                <label id="hueShowVal">0</label>
+                                            </td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label id="saturation"></label></td>
+                                            <td>
+                                                <input type="range" id='saturationVal' min='-1' max='1' step='0.01' value='0'>
+                                            <td>
+                                                <label id="saturationShowVal">0</label>
+                                            </td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label id="vibrance"></label></td>
+                                            <td>
+                                                <input type="range" id='vibranceVal' min='-1' max='1' step='0.01' value='0'>
+                                            <td>
+                                                <label id="vibranceShowVal">0</label>
+                                            </td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for='denoiseCheck' id="denoise"></label>
+                                                <input type='checkbox' id='denoiseCheck'>
+                                            </td>
+                                            <td>
+                                                <input type="range" id='denoiseVal' min='0' max='50' step='1' value='20'>
+                                            <td>
+                                                <label id="denoiseShowVal">0</label>
+                                            </td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label id="unsharp"></label></td>
+                                            <td>
+
+                                                <input type="range" id='UMRadiusVal' min='0' max='200' step='1' value='0'>
+                                                <label id="UMRadiusShowVal">0</label>
+                                                <input type="range" id='UMStrengthVal' min='0' max='5' step='0.05' value='0'>
+                                                <label id="UMRadiusShowVal">0</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label id="noise"></label></td>
+                                            <td>
+                                                <input type="range" id='noiseVal' min='0' max='1' step='0.01' value='0'>
+                                            <td>
+                                                <label id="noiseShowVal">0</label>
+                                            </td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label id="sepia"></label></td>
+                                            <td>
+                                                <input type="range" id='sepiaVal' min='0' max='1' step='0.01' value='0'>
+                                            <td>
+                                                <label id="sepiaShowVal">0</label>
+                                            </td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label id="vignette"></label></td>
+                                            <td>
+                                                <input type="range" id='vigSizeVal' min='0' max='1' step='0.01' value='0'>
+                                                <label id="vigSizeShowVal">0</label>
+                                                <input type="range" id='vigAmountVal' min='0' max='1' step='0.01' value='0'>
+                                                <label id="vigAmountShowVal">0</label>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+
+                                    <button id='resetAdjButton' onclick="needlework.homepage.utils.resetAjd()"></button>
+                                </div>
+                                <div id='editSrcImgDiv'>
+                                    <canvas id='editImgCanvas'></canvas>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="imgDraw">
+                        <div id='imgDrawDiv'>
+                            <div id="literally"></div>
+                        </div>
+
+                    </div>
+                    <div id="imgCropTab">
+                        <div id='imgCropTab'>
+                            <div id="scrollCrop">
+                                <img id="imgCrop">
+                            </div>
+                            <button id='cropButton' onclick="needlework.homepage.utils.cropImg()"></button>
+                            <button id='cropButtonReset' onclick="needlework.homepage.utils.resetCropImg()"></button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <canvas id='srcImgCanvasBuffer' class="hideCanvas"></canvas>
+            <canvas id='drawImgCanvasBuffer' class="hideCanvas"></canvas>
+            <canvas id='adjImgCanvasBuffer' class="hideCanvas"></canvas>
+            <canvas id='cropImgCanvasBuff' class="hideCanvas"></canvas>
+            <canvas id="colorsReportForPDF"></canvas>
+
+        </div>
+
+    </div>
+
+@*<div>
+    <img id="imageCropTest" src="~/img/imagePalette.png">
+</div>*@
+
+<script src="~/js/scroll.js"></script>
+<script src="~/js/classie.js"></script>
+<script src="~/js/myDesign.js"></script>
+

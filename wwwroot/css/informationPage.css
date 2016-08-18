@@ -1,0 +1,75 @@
+.columns img {
+    width: 100%;
+}
+
+.soul {
+    padding: 20px;
+}
+
+#content {
+    position:relative;
+    display:block;
+}
+
+
+.contentFirst {
+    background: #59c39e;
+    z-index: 4;
+    position: relative;
+}
+
+    .contentFirst:after {
+        position: relative;
+        display: block;
+        top: 50px;
+        margin: auto;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 50px 50px 0 50px;
+        border-color: #59c39e transparent transparent transparent;
+    }
+
+
+.contentSecond {
+    background: #c35959;
+    z-index: 3;
+}
+
+    .contentSecond:after {
+        position: relative;
+        display: block;
+        top: 50px;
+        margin: auto;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 50px 50px 0 50px;
+        border-color: #c35959 transparent transparent transparent;
+    }
+
+
+.contentText {
+    padding-top: 10%;
+    padding-left: 50px;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 1200px) {
+    .contentText {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 550px) {
+    #welcome h1 {
+        font-size: 100pt;
+        /*padding-top: 25%;*/
+    }
+}
+
+.contentText > span {
+    font-size: 3em;
+    display: block;
+    text-align: center;
+}

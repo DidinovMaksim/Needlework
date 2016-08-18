@@ -1,0 +1,19 @@
+﻿@using System.Security.Claims
+
+@if (User.IsSignedIn())
+{
+    
+    <a asp-controller="Palettes" asp-action="Index"><li id="editPalettes"></li></a>
+
+    if (User.IsInRole("Admin"))
+    {
+        <a asp-controller="AdminUser" asp-action="Index"><li id="adminPage"></li></a>
+    }
+
+    <li id="signOut" class="signOut"></li>
+    <li id="changePassword" class="changePassword"></li>
+}
+else
+{
+    <li id="signIn" class="signIn"></li>
+}

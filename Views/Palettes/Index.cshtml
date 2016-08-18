@@ -1,0 +1,135 @@
+<link rel="stylesheet" href="~/css/editPage.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<div id="body">
+
+
+
+    
+    <div class="container" id="containerLeft">
+
+        <div id="hidePalette">
+            <h2 align='center'><f id="makeNew"></f><span id="palette"></span><f id="yourWork"></f></h2><br>
+            <f id="paletteText1"></f> 
+            <f id="paletteText2"></f>
+            <f id="paletteText3"></f>
+            <f id="paletteText4"></f>         
+        </div>
+
+        <br><br><br>
+
+        <p>
+            <label for="name" id="nameOfPalette"></label><br>
+            <input type="text" name="name" id="inputPaletteName"><label for="PaletteName"></label> 
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Submit" id="sentPaletteName">
+            <input type="button" id="cancel" value="Cancel">
+        </p>
+
+        <p>
+            <input type="button" name="AddPalette" value="Add Palette" id="AddPalette">
+        </p>
+
+    </div>
+
+
+
+
+    <div class="container" id="containerMiddle">
+        <h2 id="lisOfPalette"></h2><br>
+        @*<div class="PaletteName">First Palette </div><input type="button" name="Remove" value="Remove" class="RemovePalette">*@
+    </div>
+
+
+
+
+
+
+    <div class="container" id="containerRight">
+        <div id="hideColor">
+            <h2 align='center'><f id="makeNew1"></f><span id="colorNew"></span><f id="yourWork1"></f></h2><br>
+            <f id="colorText1"></f>
+            <f id="colorText2"></f>
+            <f id="colorText3"></f>
+            <f id="colorText4"></f>
+
+
+
+        </div>
+
+        <br><br><br>
+
+        <div id="choiceColor">
+            <div id="colorPalette" title="Basic dialog">
+                <canvas width="256" height="256" id="canvas_picker" crossorigin="anonymous"></canvas>
+            </div>
+
+            <form action="">
+                HEX: <input type="text" id="inputColorHex"/><label for="hex"></label><br>
+                RGB: <input type="text" id="inputColorRGB"/><label for="rgb"></label><br>
+                <f id="nameOfColor"></f><input type="text" name="name" id="inputColorName"/><label for="colorName"></label><br>
+                <input type="submit" value="Submit" id="submitColor">
+                <input type="button" class="clear" value="Clear" id="clearColor">
+            </form>
+            <!--
+            <div id="hex"></div>
+            <div id="rgb"></div>
+            -->
+
+
+        </div>
+
+
+        <!--
+
+        <p>
+        <label for="name">Enter Color Name</label><br>
+
+        </p>
+        <p>
+        <input type="submit" name="submit" value="Submit">
+        <input type="button" id="cancel" value="Cancel">
+        </p>
+        -->
+
+       
+
+    </div>
+
+
+
+
+
+
+    <div class="container" id="colorList">
+        <div id="backToPalette"><img src="./img/goDown.png" alt=""><div id="backToPaletteText"></div></div>
+        <h2 id="listOfColors"></h2><br><br><br>
+        <div id="AddColor"><img src="./img/goDown.png" alt=""><div id="AddColorText"></div></div>
+
+        <div class="ChangeColor">
+            <input type="button" name="EditColor" value="Edit" class="EditColor" id="EditColor">
+            <input type="button" name="RemoveColor" value="Remove" class="RemoveColor" id="RemoveColor">
+        </div>
+           
+               
+        @*<div class="color"><div class="Thumbnail"></div><div class="colorName">SomeColor</div><div class="colorCode">#fff000</div></div> *@
+        
+    </div>
+
+</div>   
+
+
+
+    <div class="popUpBack" id="confirmRemoveColorOrPaletteBack">
+        <div class="popUp" id="confirmRemoveColorOrPalette">
+            <h2 class="center" id="writeFeedback"></h2>
+            <form class="center">
+                <textarea id="feedBackArea"></textarea><br />
+                <input id="feedBackSubmit" type="button" value="submit" />
+            </form>
+        </div>
+    </div>
+ 
+<script src="~/js/needlework.editPage.js"></script>
+<script src="~/js/colorPicker.js"></script>   

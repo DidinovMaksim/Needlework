@@ -1,0 +1,199 @@
+/*administration grid part*/
+div#usersList {
+    width: 100%!important;
+}
+div#feedbacksList {
+    width: 100%!important;
+}
+div#gbox_usersList{
+    position: relative;
+    z-index: 1;
+    top:-2px;
+}
+.ui-tabs-anchor:active, .ui-tabs-anchor:focus{
+     outline:none;
+}
+.ui-widget-header {
+    background: white;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: white;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-hover .ui-state-hover {
+    background: #EFF4F7;
+    transition: all 0.3s ease;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover{
+	background: #367fa9;
+}
+.ui-state-hover, .ui-widget-content .ui-state-default{
+	border: 1px solid #999999;
+}
+tr:nth-child(even).ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: #B0C4DE;
+    border: 1px solid #aaaaaa;
+}
+tr:nth-child(odd).ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: white;
+    border: 1px solid #aaaaaa;
+}
+div#tabs-1 {
+    padding:2px 0 0 0;
+}
+div#tabs-3 {
+    padding:0 0 0 0;
+}
+div#tabs-4 {
+    padding:0 0 0 0;
+}
+.ui-jqgrid tr.ui-row-ltr td {
+    padding: 5px;
+}
+.ui-jqgrid .ui-jqgrid-htable th div {
+    font-weight:700;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-button{
+    border:none;
+    background:none;
+    margin:0;
+    padding:0;
+}
+.ui-jqgrid .ui-pg-button span {
+    border:none;
+    margin:0;
+    padding:0;
+}
+.ui-jqgrid .ui-pg-input {
+    width: 30px;
+    height: 18px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+.ui-jqgrid .ui-jqgrid-titlebar-close span {
+    margin:0;
+}
+div#usersList {
+    border-radius:0;
+}
+tr:nth-child(even){
+	background: #B0C4DE;
+}
+a.ui-jqgrid-titlebar-close.HeaderButton.ui-corner-all {
+    display: none;
+}
+.admin-page {
+    position: relative;
+    height: 70%;
+}
+.admin-page .wrap{
+    position: relative;
+    top: 90px;
+    width: 95%;
+    margin: 0 auto;
+}
+.deleteBtn {
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+.deleteBtn i.fa.fa-trash {
+    font-size: 16px;
+}
+ul.ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-corner-all {
+   background: #B0C4DE;
+   border-radius: 0;
+}
+div#tabs {
+    padding:0;
+}
+#TblGrid_usersList tr:nth-child(even){
+    background:white;
+}
+#TblGrid_usersList_2 tr:nth-child(even){
+    background:white;
+}
+#TblGrid_paletteList tr:nth-child(even){
+    background:white;
+}
+#TblGrid_paletteList_2 tr:nth-child(even){
+    background:white;
+}
+/*localization part*/
+.first-level span.title {
+    display: block;
+    float: left;
+    width: 45%;
+}
+.first-level {
+    overflow: hidden;
+    width: 450px;
+    margin: 0 0 5px 0;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+.second-level {
+    overflow: hidden;
+    width: 100%;
+}
+.first-level > input {
+    display: block;
+    width: 220px;
+    float: right;
+    margin-right: 19px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.multiple {
+    float: right;
+    width: 220px;
+}
+.multiple > input {
+    margin-top: 5px;
+    float: right;
+    margin-right: 21px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.multiple > span input {
+    margin-top: 5px;
+    width:220px;
+    font-size: 12px;
+    font-weight: 400;
+}
+span.default, span.minus {
+    display:block;
+    float: right;
+    position:relative;
+    padding-right: 19px;
+}
+i.fa.fa-plus-circle {
+    cursor: pointer;
+    color: green;
+    margin-right: 1px;
+    margin-left: -1px;
+    position: absolute;
+    top: 10px;
+    right: -1px;
+}
+i.fa.fa-minus-circle {
+    margin-left: 5px;
+    cursor:pointer;
+    color: red;
+    margin-right: 1px;
+    position: absolute;
+    top: 10px;
+    right: -1px;
+}
+select#selectLanguage {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-right: 117px;
+}
+select#selectPage {
+    font-size: 14px;
+}
+div#gbox_paletteList {
+    z-index: 2;
+}

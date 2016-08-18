@@ -1,0 +1,211 @@
+﻿@using System.Security.Claims
+
+@{
+    if (!string.IsNullOrEmpty(Context.Request.Cookies["lang"]))
+    {
+        ViewBag.lang = Context.Request.Cookies["lang"] + ".js";
+    }
+    else
+    {
+        ViewBag.lang = "en.js";
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Embroidery site</title>
+
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/hamburger.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="~/js/needlework.js"></script>
+    <script src='~/js/snap.svg-min.js'></script>
+    <script src='~/js/Localization.@ViewBag.lang'></script>
+    <script src="~/js/needlework.popups.js"></script>
+    <script src="~/js/needlework.localization.js"></script>
+    <script src="~/js/needlework.validations.js"></script>
+    <script src="~/js/needlework.hamburgermenu.js"></script>
+    <script src="~/js/needlework.layout.js"></script>
+    <script src="~/js/needlework.layout.utils.js"></script>
+
+
+
+    <style>
+        @@font-face {
+            font-family: MyFont;
+            src: url(../fonts/8983.ttf);
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div id="leftMenu">
+            <div id="companyName">Fancywork</div>
+            <ul>
+                <a asp-controller="Home" asp-action="Index"><li id="homePage"></li></a>
+                <a asp-controller="Home" asp-action="About"><li id="aboutUs"></li></a>
+                @await Html.PartialAsync("_LoginPartial")
+            </ul>
+        </div>
+
+
+        <button id="hamburger" class="menu-button">
+            <span id="morph-shape" class="morph-shape" data-morph-open="M3,20c0,0,12-4,27-4s27,4,27,4;M3,60c0,0,12,4,27,4s27-4,27-4" data-morph-close="M3,20c0,0,12,4,27,4s27-4,27-4;M3,60c0,0,12-4,27-4s27,4,27,4">
+                <svg width="100%" height="100%" viewBox="0 0 60 80" preserveAspectRatio="none">
+                    <path d="M3,20c0,0,12,0,27,0s27,0,27,0" />
+                    <line x1="3" y1="40" x2="57" y2="40" />
+                    <path d="M3,60c0,0,12,0,27,0s27,0,27,0" />
+                </svg>
+            </span>
+        </button>
+
+        <div id="topMenu">        
+
+
+            @if (User.IsSignedIn())
+            {
+                //here must be Hello, UserName
+                <div id="userName"> <f id="helloUser"></f>@NeedleWork2016.Repository.UserProfileRepository.GetUserNameByEmail(User.GetUserName())</div>
+            }
+        </div>
+       
+    </header>
+
+
+    @if (User.IsSignedIn() && !User.IsInRole("Admin"))
+    {
+        <img src="~/img/Mail-icon-blue.png" alt="" id="feedback">
+    }
+
+    @RenderBody()
+
+    <footer>
+        <div class="footerContent" id="fcL">
+            <ul>
+                <h2 id="language"></h2>
+                <br />
+                <li class="langChange" id="en">English</li>
+                <li class="langChange" id="ru">Русский</li>
+                <!--<li class="langChange" name="de">Deutsch</li> -->
+            </ul>
+        </div>
+        <div class="footerContent" id="fcM"></div>
+        <div class="footerContent" id="fcR">
+            <h2 id="ourContacts">:</h2><br>
+            <div id="email"></div><br>
+            <div id="phone"></div>
+        </div>
+    </footer>
+
+    <div class="popUpBack">
+        <div class="popUp" id="popUpLogin">
+            <div id="loginForm">
+                <h2 id="PULoginTitle" class="center"></h2>
+                <form class="center">
+                    <input id="loginEmail" type="text" placeholder="email" />
+                    <input id="loginPassword" type="password" placeholder="password" /><br />
+                    <input id="loginRemember" type="checkbox"><br />
+                    <input id="loginSubmit" type="button" value="submit" /><br />
+                </form>
+                <a id='forgotPassword'></a><br />
+                <a id='registration'></a>
+            </div>
+            <div id="registrationForm">
+                <h2 id="PURegistrationTitle" class="center"></h2>
+                <form class="center">
+                    <input id="registrationFirstName" type="text" placeholder="first name" />
+                    <input id="registrationLastName" type="text" placeholder="last name" />
+                    <input id="registrationEmail" type="text" placeholder="email" />
+                    <input id="registrationPassword" type="password" placeholder="password" />
+                    <input id="registrationConfirmPassword" type="password" placeholder="confirm password" />
+                    <div id="registrationReCaptcha" class="g-recaptcha" data-sitekey="6LeTQxcTAAAAAPEgVz319fEVVh-ztFub9GaIGqZc"></div>
+                    <input id="registrationSubmit" type="button" value="submit" /><br />
+                </form>
+                <a id='login'></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popUpBack">
+        <div class="popUp" id="popFeedback">
+            <h2 class="center" id="writeFeedback"></h2>
+            <form class="center">
+                <textarea cols="40" rows="7" id="feedBackArea"></textarea><br />
+                <input id="feedBackSubmit" type="button" value="submit"/>
+            </form>
+        </div>
+    </div>
+
+    <div class="popUpBack">
+        <div class="popUp" id="popChangePassword">
+            <h2 class="center" id="titleChangePassword"></h2>
+            <form class="center">
+                <input id="changePasswordOldPassword" placeholder="old password" type="password" />
+                <input id="changePasswordNewPassword" placeholder="new password" type="password" />
+                <input id="changePasswordNewPasswordConfirm" placeholder="confirm new password" type="password" />
+                <input id="changePasswordSubmit" type="button" value="submit" />
+            </form>
+        </div>
+    </div>
+
+    <div class="popUpBack">
+        <div class="popUp" id="popForgotPassword">
+            <h2 class="center" id="titleForgotPassword"></h2>
+            <form class="center">
+                <input id="forgotPasswordEmail" placeholder="email" type="text" />
+                <input id="forgotPasswordSubmit" type="button" value="submit" />
+            </form>
+        </div>
+    </div>
+
+    <div class="popUpBack">
+        <div class="popUp" id="popResetPassword">
+            <h2 class="center" id="titleResetPassword"></h2>
+            <form class="center">
+                <input id="resetPasswordEmail" placeholder="email" type="text" />
+                <input id="resetPasswordNewPassword" placeholder="new password" type="password" />
+                <input id="resetPasswordNewPasswordConfirm" placeholder="confirm new password" type="password" />
+                <input id="resetPasswordSubmit" type="button" value="submit" />
+            </form>
+        </div>
+    </div>
+
+    <div class="popUpBack">
+        <div class="popUp" id="popInformation">
+            <h2 class="center" id="informationTitle"></h2>
+            <h4 class="center" id="informationMessage"></h4>
+        </div>
+    </div>
+
+
+    <div id="loading">
+        <div id="loadingInner">
+            <img src="~/img/loading.gif" />
+        </div>
+    </div>
+
+    <div class="popUpBack">
+        <div class="popUp confirmRemove" id="confirmRemovePalette">
+            <label></label><br><br>
+            <input type="button" id="acceptRemovePalette" value="Accept"></input>
+            <input type="button" id="cancelRemovepalette" value="Cancel"></input>
+        </div>
+    </div>
+
+    <div class="popUpBack">
+        <div class="popUp confirmRemove" id="confirmRemoveColor">
+            <label></label><br><br>
+            <input type="button" id="acceptRemoveColor" value="Accept"></input>
+            <input type="button" id="cancelRemoveColor" value="Cancel"></input>
+        </div>
+    </div>
+
+
+
+</body>
+<script src='~/js/classie.js'></script>
+</html>

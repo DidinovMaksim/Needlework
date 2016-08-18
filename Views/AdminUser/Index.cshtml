@@ -1,0 +1,123 @@
+@*@model NeedleWork2016.ViewModels.Admin.AdminUsersViewModel*@
+@*@model NeedleWork2016.ViewModels.Home.HomeViewModel*@
+
+@{
+    ViewData["Title"] = "Admin page";
+}
+
+
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<link href="~/lib/jqgrid-master/css/ui.jqgrid.css" rel="stylesheet" />
+<link href="~/css/admin.css" rel="stylesheet" />
+<link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+<div id="admin">
+    <div class="admin-page">
+        <div class="wrap">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Admin Users</a></li>
+                    <li><a href="#tabs-2">Localization</a></li>
+                    <li><a href="#tabs-3">FeedBacks</a></li>
+                    <li><a href="#tabs-4">Palettes</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <table id="usersList"></table>
+                    <div id="gridPager"></div>
+                </div>
+                <div id="tabs-2">
+
+                    <form role="form" id="localizationForm">
+                        <select id="selectLanguage">
+                            <option value="choose" disabled selected="selected">Choose language</option>
+                            <option value="en">English</option>
+                            <option value="ru">Russian</option>
+                        </select>
+
+                        <select id="selectPage">
+                            <option value="IP">Information page</option>
+                            <option value="PP">Palette page</option>
+                        </select>
+
+                        <div class="first-level">
+                            <span class="title">Title:</span>
+                            <input type="type" name="IPtitle" value=" " />
+                        </div>
+
+                        <div class="first-level IPFirstBlockText">
+                            <span class="title">First Block Name: </span>
+                            <input type="type" name="IPFirstBlockName" value=" " />
+                            <div class="second-level IPFirstBlockText">
+                                <span class="title">First Block Text:</span>
+                                <div class="multiple">
+                                    <span id="item" class="default">
+                                        <input type="type" name="IPFirstBlockText" value=" " />
+                                        <i class="fa fa-plus-circle"></i>
+                                    </span>
+                                    <span id="item" class="minus"><input type="type" name="IPFirstBlockText" value=" " /><i class="fa fa-minus-circle"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="first-level IPSecondBlockText">
+                            <span class="title">Second Block Name: </span>
+                            <input type="type" name="IPSecondBlockName" value=" " />
+                            <div class="second-level IPSecondBlockText">
+                                <span class="title">First Block Text:</span>
+                                <div class="multiple">
+                                    <span id="item" class="default">
+                                        <input type="type" name="IPSecondBlockText" value=" " />
+                                        <i class="fa fa-plus-circle"></i>
+                                    </span>
+                                    <span id="item" class="minus"><input type="type" name="IPSecondBlockText" value=" " /><i class="fa fa-minus-circle"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="first-level IPThirdBlockText">
+                            <span class="title">Third Block Name: </span>
+                            <input type="type" name="IPThirdBlockName" value=" " />
+                            <div class="second-level IPThirdBlockText">
+                                <span class="title">First Block Text:</span>
+                                <div class="multiple">
+                                    <span id="item" class="default">
+                                        <input type="type" name="IPThirdBlockText" value=" " />
+                                        <i class="fa fa-plus-circle"></i>
+                                    </span>
+                                    <span id="item" class="minus"><input type="type" name="IPThirdBlockText" value=" " /><i class="fa fa-minus-circle"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" id="updateBtn" value="Update" />
+                    </form>
+                </div>
+
+                <div id="tabs-3">
+                    <table id="feedbacksList"></table>
+                    <div id="gridPagerFeedback"></div>
+                </div>
+
+                <div id="tabs-4">
+                    <table id="paletteList"></table>
+                    <div id="palettePager"></div>
+                    <div id="ColorPager"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup"></div>
+
+<script src="~/lib/jqgrid-master/js/jquery.jqgrid.min.js"></script>
+<script src="~/lib/jqgrid-master/js/i18n/grid.locale-en.js"></script>
+<script src="~/js/needlework.admin.js"></script>
+<script src="~/js/needlework.admin.utils.js"></script>
+<script src="~/js/needlework.admin.bindActions.js"></script>
+<script src="~/js/paletteadmin.js"></script>
+
+
+
+

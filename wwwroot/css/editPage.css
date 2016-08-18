@@ -1,0 +1,550 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Segoe UI Emoji';
+    font-family: 'Trebuchet MS';
+    color: white;
+    overflow-x: hidden;
+    min-width:initial;
+    width:auto;
+}
+
+
+
+#body {
+    width: 100%;
+    height: 100%;    
+    text-align: center;
+    position: relative;
+    /*margin-bottom:123px;*/
+}
+
+.container {
+    position: relative;
+    width: 33.33%; 
+    height: 85%;
+    overflow-y: auto;
+    background-color: #222222;
+    display: inline-block;
+    margin: 0;   
+    padding-top: 15%;
+    float: left;
+ 
+}
+
+#containerLeft, #containerRight {
+    box-shadow: 0 0 10px 2px black;
+    z-index: 2;
+    overflow: hidden;
+    /*    padding-top: 12%;*/
+}
+
+#containerRight {
+    position: absolute;
+    float: right;
+    right: 0;
+  
+}
+
+ 
+
+
+.container > p {
+    width: 80%;
+    left: 10%;
+    position: relative;
+    height: 75px;
+}
+
+/*.container>p>label{
+    color: white;
+    font-size: 1.4em;      
+}*/
+
+
+label[for=name] {
+    color: white;
+    font-size: 1.4em;
+}
+
+label[for=PaletteName] {
+    width: 100%;
+    /*    position: absolute;*/
+    display: iblock;
+    margin: auto;
+    text-align: center;
+    float: left;
+    font-size: 1em;
+}
+
+#inputPaletteName {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 30px;
+    background-color: #3c3c3c;
+    font-size: 1.2em;
+    color: white;
+    float: none;
+    cursor: auto;
+}
+
+.container > p > input {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*.container>p>input:active{
+    box-shadow: inset 0 0 10px 1px black;      
+}
+
+#name:active{
+    box-shadow: inset 0 0 0px 0px black;       
+}*/
+
+input[type=button]:active {
+    box-shadow: inset 0 0 10px 1px black;
+}
+
+input[type=submit]:active {
+    box-shadow: inset 0 0 10px 1px black;
+}
+
+#cancel {
+    border-left: 2px solid black;
+    cursor: pointer;
+}
+
+
+#body > .container > h2 {
+    color: white;
+    font-size: 2em;
+}
+
+#AddPalette {
+    width: 250px;
+    padding: 20px;
+    background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 50%,#00baff 51%,#00baff 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 50%,#00baff 51%,#00baff 100%);  
+
+    color:white;
+    border: 2px solid #00baff;
+
+    background-size: 1000px 1000px;
+    font-weight: bold;
+    position: relative;
+    margin: auto;
+    top: 400%;
+    -webkit-transition: .5s;
+    cursor: pointer;
+    border-radius: 5px;
+    float: none;
+}
+
+
+    #AddPalette:hover {
+        background-position: -60% 0%;
+        color:black;
+    }
+
+
+/*
+#addPalette{
+padding: 20px;
+padding-left: 60px;
+padding-right: 60px;
+background-color: hsl(247, 50%, 35%);
+border-radius: 15px;  
+font-weight: bold;    
+}
+*/
+
+#body h1, h2, p, input, label {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    font-weight: bold;
+    outline:none;
+}
+
+
+
+
+
+
+.PaletteName {
+    display: inline-block;
+    cursor: pointer;
+    position:relative;
+    margin: auto;
+    width: 45%;
+    margin-right:5%;
+    padding-right:2%;
+    float: left;
+    text-align: right;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+    .PaletteName:hover {
+        background-color: #00baff;
+    }
+
+.container > input {
+    display: inline-block;
+    float: left;
+    margin-left: 30px;
+}
+
+
+.Palettes {
+width:100%;
+height:24px;
+margin:auto;
+position:relative;
+display:block;
+margin-bottom:5px;
+/*background-color: red;*/
+}
+
+
+#containerMiddle input[type=button] {
+    display: inline-block;
+    background-color: #00baff;
+    border-bottom: 1px solid black;
+    padding: 4px;
+    float: left;
+    cursor: pointer;
+    font-weight: bold;
+     margin-right:2%;
+    /*margin-bottom: 5px;*/    
+    border-radius: 3px;
+    text-align:center;
+    width:80px;
+    cursor:pointer;
+  }
+
+    #containerMiddle input[type=button]:hover {
+        background-color: rgb(0, 149, 204);
+    }
+
+.RemovePalette {
+ margin-right:5%;
+}
+
+.ChangePaletteName {
+position:absolute;
+float:left;
+left:0;
+display:block;
+top:0%;
+height:100%;
+width:100%;
+text-align:center;
+cursor:auto;
+background-color: #3c3c3c;
+color:white;
+
+}
+
+
+
+
+
+#colorList {
+    height: 85%;
+    background-color: rgba(34, 34, 34, 0.95);
+    background-color: rgb(34, 34, 34);
+    /*    background-color: rgb(180, 90, 90);   */
+    position: absolute;
+    display: inline-block;
+    left: -10px;
+    /*    display: none;*/
+    margin: 0;
+    float: left;
+    padding-top: 15%;
+    /*    margin-left: -120px;   */
+    overflow-y: auto;
+    z-index: 1;
+}
+
+#backToPalette {
+    top: 20%;
+    position: absolute;
+    width: 120px;
+    height: 110px;
+    transition: .2s;
+    cursor: pointer;
+    left: 5%;
+    color: #333333;
+    font-weight: bold;
+}
+
+    #backToPalette img {
+        transform: rotate(180deg);
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: auto;
+    }
+
+#AddColor {
+    top: 20%;
+    position: absolute;
+    width: 120px;
+    height: 110px;
+    transition: .2s;
+    cursor: pointer;
+    color: #333333;
+    font-weight: bold;
+    right: 5%;
+    float: right;
+}
+
+    #AddColor img {
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: auto;
+    }
+
+
+#backToPalette:hover {
+    -webkit-filter: invert(1);
+}
+
+#AddColor:hover {
+    -webkit-filter: invert(1);
+}
+
+#hidePalette, #hideColor {
+    position: absolute;
+    background-color: #222222;
+    width: 80%;
+    height: 250px;
+    display: block;
+    left: 10%;
+    text-align: justify;
+    /*    padding: 30px; */
+    z-index: 2;
+}
+
+    #hidePalette span {
+        color: #00baff;
+    }
+
+    #hideColor span {
+        color: #ffb100;
+    }
+
+
+.Thumbnail {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #ffb100;
+    margin-right: 10px;
+}
+
+.colorName {
+    display: inline-block;
+}
+
+
+.colorCode {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.color {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+    .color:hover {
+        background-color: rgb(0, 149, 204);
+        background-color: rgb(50, 141, 74);
+        cursor: pointer;
+    }
+
+.ChangeColor {
+    width: 100%;
+    height: 40px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+    .ChangeColor > input {
+        width: 40%;
+        height: 100%;
+        display: inline-block;
+        background-color: #00baff;
+        cursor: pointer;
+        margin-right: 2px;
+    }
+
+        .ChangeColor > input:hover {
+            background-color: rgb(0, 149, 204);
+        }
+
+
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
+    border: none;
+}
+
+#choiceColor {
+    width: 256px;
+    height: auto;
+    display: block;
+    /*    left: 100px;*/
+    margin: auto;
+    position: absolute;
+    /*    float: right;*/
+    /*    right: 300px;*/
+    /*    background-color: #161921;*/
+    padding: 10px;
+    z-index: 10;
+    top: -100%;
+    left: 0;
+}
+
+#colorPalette {
+    width: 256px;
+    display: block;
+}
+
+#choiceColor input {
+    width: 90%;
+    /*    height: 100%;*/
+    position: relative;
+    display: block;
+    /*    left: -2%;*/
+    /*    float: right;*/
+    /*    right: 20px;*/
+    /*    background-color: #00baff; */
+    padding: 5px;
+    margin-top: 10px;
+    margin: auto;
+    cursor: auto;
+    text-align: center;
+}
+
+    #choiceColor input[type=submit],#choiceColor input[type=button] {
+        width: 45%;
+        display: inline-block;
+        background-color: #00baff;
+        border-radius: 3px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+         background-color: rgba(0,0,0,0);
+        border: 3px solid #00baff;
+        color:white;
+        cursor:pointer;
+        transition:.5s;
+    }
+
+  #choiceColor input[type=submit]:hover {
+    box-shadow: inset 0 0 100px 10px #00baff;
+}
+
+    #choiceColor input[type=button]:hover {
+    box-shadow: inset 0 0 100px 10px #00baff;
+}
+
+
+
+#inputColorHex, #inputColorRGB, #inputColorName {
+    background-color: #3c3c3c;
+    font-size: 1.2em;
+    color: white;
+}
+
+
+
+p > input, input {
+    cursor: pointer;
+}
+
+
+
+
+
+/*footer {
+top:100px;
+}*/
+
+
+/*
+#registrationForm,#loginForm, #popChangePass,#popChangePass>h2{
+color: black;
+}
+
+#loginForm>.center>input{
+border: 1px solid rgba(0, 0, 0, 0.76);
+}
+#registrationForm>.center>input{
+border: 1px solid rgba(0, 0, 0, 0.76);
+}
+
+#registrationForm h2{
+color: black;
+}
+
+#loginForm>h2{
+color: black;
+}
+
+#submitRegistr{
+border: 1px solid red;
+}
+*/
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .container {
+        width: 100%;
+        display: block;
+        /*min-height: 500px;*/
+        height: 85%;
+        /*        padding-top: 0;*/
+    }
+
+    #AddPalette {
+        top: 80px;
+    }
+
+    #hidePalette, .container > p {
+        width: 60%;
+        left: 20%;
+    }
+
+    #colorList {
+        top: 100%;
+        left: -100%;
+        height: 85%;
+        padding-top: 15%;
+        overflow-y: auto;
+    }
+
+    #containerRight {
+        position: ;
+        top: 100%;       
+        z-index:2;
+        float: left;
+        left:105%;        
+    }
+}

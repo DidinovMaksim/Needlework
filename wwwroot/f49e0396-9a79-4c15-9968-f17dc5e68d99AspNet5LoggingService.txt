@@ -1,0 +1,102 @@
+Microsoft.Extensions.DependencyInjection.DataProtectionServices Information: 0 : User profile is available. Using 'C:\Users\User1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 DEBUG http://localhost:50660/ text/html 
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/  
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.HomeController.Index with arguments () - ModelState is Valid'
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (5ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilderFactory Information: 1 : Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[ClaimType], [uc].[ClaimValue]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.AspNet.Authentication.Cookies.CookieAuthenticationMiddleware Information: 0 : HttContext.User merged via AutomaticAuthentication from authenticationScheme: Microsoft.AspNet.Identity.Application.
+Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker Information: 1 : Executing action method NeedleWork2016.Controllers.HomeController.Index with arguments () - ModelState is Valid'
+Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor Information: 1 : Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor Information: 1 : Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler Information: 2 : Executed action NeedleWork2016.Controllers.HomeController.Index in 0.1516ms
+Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler Information: 2 : Executed action NeedleWork2016.Controllers.HomeController.Index in 0.2782ms
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.3265ms 200 text/html; charset=utf-8
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.3265ms 200 text/html; charset=utf-8
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/css/style.css  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/lib/LiterallyCanvas/css/literallycanvas.css  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/Localization.en.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/css/homePage.css  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/Localization.en.js was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /lib/LiterallyCanvas/css/literallycanvas.css was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /css/style.css was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /css/homePage.css was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0094ms 304 text/css
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0063ms 304 text/css
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0109ms 304 text/css
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/lib/jquery.imgareaselect-0.9.10/scripts/jquery.imgareaselect.pack.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/lib/jquery.imgareaselect-0.9.10/css/imgareaselect-default.css  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0063ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/lib/LiterallyCanvas/js/literallycanvas.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /lib/jquery.imgareaselect-0.9.10/scripts/jquery.imgareaselect.pack.js was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /lib/LiterallyCanvas/js/literallycanvas.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0094ms 304 application/javascript
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /lib/jquery.imgareaselect-0.9.10/css/imgareaselect-default.css was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0016ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/testPalletes.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/lib/glfx.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/testPalletes.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0125ms 304 text/css
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/lib/jsPDF/libs/png_support/png.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0031ms 304 application/javascript
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /lib/glfx.js was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /lib/jsPDF/libs/png_support/png.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/lib/jsPDF/jspdf.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 application/javascript
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /lib/jsPDF/jspdf.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/lib/jsPDF/libs/png_support/zlib.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/lib/jsPDF/dist/jspdf.debug.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/lib/jsPDF/libs/html2canvas/dist/html2canvas.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /lib/jsPDF/libs/png_support/zlib.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0015ms 304 application/javascript
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /lib/jsPDF/libs/html2canvas/dist/html2canvas.js was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /lib/jsPDF/dist/jspdf.debug.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/myDesign.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0031ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0016ms 304 application/javascript
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/myDesign.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/createPDF.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/scroll.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 application/javascript
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/createPDF.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/index.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/scroll.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0032ms 304 application/javascript
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/index.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/needlework.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/needlework.algorithm.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0046ms 304 application/javascript
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/needlework.js was not modified
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/needlework.algorithm.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/needlework.events.js  
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/needlework.drawing.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/needlework.events.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0063ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 1 : Request starting HTTP/1.1 GET http://localhost:50660/js/needlework.utils.js  
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/needlework.drawing.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0031ms 304 application/javascript
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0047ms 304 application/javascript
+Microsoft.AspNet.StaticFiles.StaticFileMiddleware Information: 6 : The file /js/needlework.utils.js was not modified
+Microsoft.AspNet.Hosting.Internal.HostingEngine Information: 2 : Request finished in 0.0078ms 304 application/javascript

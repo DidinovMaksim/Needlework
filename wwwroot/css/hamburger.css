@@ -1,0 +1,198 @@
+body {
+    position: relative;
+}
+
+#companyName {
+    position: relative;
+    width: 400px; 
+    background-color: rgba(255, 0, 0, 0);
+    margin: auto;
+    top: 15%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 4em;
+    color: #447198;
+    color: #ffffff;
+    font-family: "MyFont";
+}
+
+#userName {
+position:relative;
+float:right;
+right: 100px;
+width:auto;
+padding-top:20px;
+padding-bottom:20px;
+font-size: 1.5em;
+}
+
+.menu-button {
+    width: 50px;
+    height: 50px;
+    left: 100px;
+    top: 10px;
+    position: relative;
+    position: fixed;
+    /*position:absolute;*/
+    /*	margin: 5em auto;*/
+    display: block;
+    background: none;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+    cursor: pointer;
+    z-index: 11;
+}
+
+.morph-shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+    .morph-shape svg path,
+    .morph-shape svg line {
+        stroke: #DDDCD7;
+        stroke-width: 4px;
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+    }
+
+.menu-button--open .morph-shape svg path:first-of-type {
+    -webkit-transform: translate3d(0, -8px, 0);
+    transform: translate3d(0, -8px, 0);
+}
+
+.menu-button--open .morph-shape svg path:nth-of-type(2) {
+    -webkit-transform: translate3d(0, 8px, 0);
+    transform: translate3d(0, 8px, 0);
+}
+
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: #101010;
+    border-top: 2px solid #00baff;
+    /*    background-color: #0f0f12;*/
+    color: white;
+    text-align: right;
+    z-index:3;
+    float:right;
+    display:block;
+}
+
+.footerContent {
+    position: relative;
+    width: 33.33%;
+    display: inline-block;
+    height: 100%;
+    float: left;
+    /*    position: relative;*/
+}
+
+#fcM {
+    text-align: center;
+    height: auto;
+    top: 45%;
+}
+
+#fcR {
+    position: relative;
+    float: right;
+    top: 30%;
+    height: 70%;
+    padding-right: 5%;
+    width: auto;
+    background-color:;
+    color: white;
+    text-align: left;
+}
+
+#fcL {
+    text-align: center;
+    top: 30%;
+    height: 70%;
+}
+
+    /*
+#fcL li, #fcL ul{
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+*/
+
+    #fcL li:hover {
+        color: #00baff;
+        cursor: pointer;
+    }
+
+#leftMenu {
+    width: 400px;
+    height: 100%;
+    float: left;
+    position: fixed;
+    z-index: 12;
+    background-color: #101010;
+    /*    background-color: rgb(33, 33, 33);*/
+    border-right: 2px solid #00baff;
+    left: -405px;
+    padding-top: 70px;
+    /*    top: 70px;*/
+}
+
+    #leftMenu #companyName {
+        width: 100%;
+        height: 10%;
+        margin: 0;
+        padding: 0;
+        top: 10px;
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+
+
+    #leftMenu li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-left: 5px solid #00baff;
+        padding-left: 20px;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 2px;
+    }
+
+        #leftMenu li:hover {
+            background-color: rgb(28, 28, 28);
+            background-color: #00baff;
+        }
+
+
+
+
+
+#topMenu {
+    width: 100%;
+    height: 70px;
+
+    background-color: rgb(21, 21, 21);
+    box-shadow: 0 0 5px 1px black;
+
+    /*background-color: #101010;*/    
+    /*border-bottom: 2px solid #00baff;*/
+
+    position: fixed;
+    /*float:left;*/
+    /*left:0;*/
+    color: white;
+    z-index: 10;
+}
